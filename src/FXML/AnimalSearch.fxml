@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AnimalController">
+   <children>
+      <Group layoutX="9.0" layoutY="28.0">
+         <children>
+            <TextField fx:id="searchField" alignment="CENTER" layoutY="26.0" prefHeight="25.0" prefWidth="408.0" promptText="Name/ID...." />
+            <TableView fx:id="table" layoutY="62.0" prefHeight="200.0" prefWidth="528.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="ID" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Name">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Type">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="type" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Category">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="category" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="DOB">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="dob" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="DOA">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="doa" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="77.0" text="Gender">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="gender" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns></TableView>
+            <Button fx:id="searchBtn" layoutX="417.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Search" />
+            <Button fx:id="returnBtn" layoutX="3.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Back" />
+            <Button fx:id="deleteBtn" layoutX="417.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Delete" />
+            <Button fx:id="allBtn" layoutX="289.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Allocate" />
+         </children>
+      </Group>
+      <Label layoutX="9.0" layoutY="14.0" text="Search the Database" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Light" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.KeeperController">
+    <children>
+        <Group layoutX="9.0" layoutY="28.0">
+            <children>
+                <TextField fx:id="searchField" alignment="CENTER" layoutY="26.0" prefHeight="25.0" prefWidth="408.0" promptText="Name..." />
+                <TableView fx:id="table" layoutY="62.0" prefHeight="200.0" prefWidth="528.0">
+                    <columns>
+                        <TableColumn prefWidth="100.0" text="ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="ID" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="First Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="firstName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="99.0" text="Last Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="surname" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="101.0" text="Contact Num.">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="contactNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="127.0" text="Position">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="position" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns></TableView>
+                <Button fx:id="searchBtn" layoutX="417.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Search" />
+                <Button fx:id="returnBtn" layoutX="3.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Back" />
+                <Button fx:id="deleteBtn" layoutX="417.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Delete" />
+            <Button fx:id="allBtn" layoutX="277.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Allocate" />
+            </children>
+        </Group>
+        <Label layoutX="9.0" layoutY="14.0" text="Search the Database" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri Light" size="26.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+    </children>
+</AnchorPane>

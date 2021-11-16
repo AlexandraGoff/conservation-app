@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DetailsController">
+   <children>
+      <TextField fx:id="field2" layoutX="213.0" layoutY="146.0" prefHeight="25.0" prefWidth="178.0" promptText="Type..." />
+      <TextField fx:id="field3" layoutX="211.0" layoutY="181.0" prefHeight="25.0" prefWidth="178.0" promptText="Category..." />
+      <TextField fx:id="field5" layoutX="211.0" layoutY="247.0" prefHeight="25.0" prefWidth="178.0" promptText="Date Of Birth..." />
+      <TextField fx:id="field1" layoutX="213.0" layoutY="112.0" prefHeight="25.0" prefWidth="178.0" promptText="Name..." />
+      <TextField fx:id="field6" layoutX="211.0" layoutY="280.0" prefHeight="25.0" prefWidth="178.0" promptText="Date Of Acquisition..." />
+      <Label fx:id="title" layoutX="184.0" layoutY="33.0" prefHeight="39.0" prefWidth="249.0" text="Add a New Animal">
+         <font>
+            <Font name="Calibri Light" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitBtn" layoutX="273.0" layoutY="349.0" mnemonicParsing="false" text="Submit" />
+      <Label layoutX="213.0" layoutY="79.0" text="Please enter the following details:" />
+      <Button fx:id="returnBtn" layoutX="30.0" layoutY="349.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="mainMenuBtn" layoutX="489.0" layoutY="349.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Main Menu" />
+      <TextField fx:id="field4" layoutX="211.0" layoutY="214.0" prefHeight="25.0" prefWidth="178.0" promptText="Gender..." />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" prefHeight="400.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SampleController">
+   <children>
+      <Button fx:id="addButton" layoutX="69.0" layoutY="147.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-border-radius: 15;" text="Add New">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="searchButton" layoutX="69.0" layoutY="208.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" text="Search &amp; Allocate">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="capacityButton" layoutX="69.0" layoutY="269.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" text="Allocation &amp; Capacity">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="16.0" layoutY="53.0" prefHeight="32.0" prefWidth="312.0" text="Clyde Conservation System">
+         <font>
+            <Font name="Calibri Light" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="22.0" text="Welcome to">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="105.0" text="Menu">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

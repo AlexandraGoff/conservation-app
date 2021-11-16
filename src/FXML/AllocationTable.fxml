@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AllocationTableController">
+    <children>
+        <Group layoutX="9.0" layoutY="28.0">
+            <children>
+                <TableView fx:id="table" layoutY="31.0" prefHeight="230.0" prefWidth="528.0">
+                    <columns>
+                        <TableColumn prefWidth="100.0" text="Cage Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="cageNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Keeper ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="keepers" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="99.0" text="Animal/s">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="animals" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="101.0" text="Capacity">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="capacity" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="127.0" text="Free Space">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="space" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns></TableView>
+                <Button fx:id="returnBtn" layoutX="3.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Back" />
+            </children>
+        </Group>
+        <Label layoutX="9.0" layoutY="14.0" text="Allocation &amp; Capacity" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri Light" size="26.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+    </children>
+</AnchorPane>
